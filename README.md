@@ -214,3 +214,5 @@ def quicksort(data):
 
     return quicksort(left) + [pivot] + quicksort(right)
 ```
+
+Change for initial push
