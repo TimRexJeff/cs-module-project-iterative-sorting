@@ -1,16 +1,13 @@
 # TO-DO: Complete the selection_sort() function below
 def selection_sort(arr):
-    # loop through n-1 elements
-    for i in range(0, len(arr) - 1):
-        cur_index = i
-        smallest_index = cur_index
-        # TO-DO: find next smallest element
-        # (hint, can do in 3 loc)
-        # Your code here
-
-
-        # TO-DO: swap
-        # Your code here
+    currentIdx = 0
+    while currentIdx < len(arr) -1:
+        smallestIdx = currentIdx
+        for i in range(currentIdx + 1, len(arr)):
+            if arr[smallestIdx] > arr[i]:
+                smallestIdx = i
+        swap(currentIdx, smallestIdx, arr)
+        currentIdx += 1
 
     return arr
 
