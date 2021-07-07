@@ -7,8 +7,14 @@
 ## Objectives
 
 - describe the differences between Linear and Binary Search algorithms
+    Linear search is an algorithm to find an element in a list by sequentially checking the elements of the list until finding the matching element. Binary search is an algorithm that finds the position of a target value within a sorted array.
+
 - define what runtime complexity is, differentiate between various classifications and categorize the performance of an algorithm using Big O notation
+    Exponential growth of processes over time.
+
 - distinguish when to use, classify the performance, and implement code to conduct classic iterative sorting algorithms
+
+
 
 ## Introduction
 
@@ -214,3 +220,5 @@ def quicksort(data):
 
     return quicksort(left) + [pivot] + quicksort(right)
 ```
+
+Change for initial push
